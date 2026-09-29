@@ -1,0 +1,2 @@
+# spectral_note
+A Norns patch that outputs eight channels of midi notes with note number 36-43 where the amplitude for each band is represented as note velocity based on amplitude levels from a stereo audio signal. This midi data would be used to modulate parameters for a visual performance system. The amplitude levels would be analysed through envelope followers with variable timing for the attack and decay of sound from different fft bins.
