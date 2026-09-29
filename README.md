@@ -3,6 +3,7 @@ A Norns patch that outputs eight channels of midi notes with note number 36-43 w
 
 This is all based on the engine made from the analysis code from [spectral_cc](https://github.com/khoparzi/spectral_cc)
 
+```
 -- 8-band dynamics visualizer & MIDI Note velocity sender
 --
 -- PAGE 1: Master Stereo In/Out Level Monitor
@@ -17,5 +18,6 @@ This is all based on the engine made from the analysis code from [spectral_cc](h
 -- E1: Select Band (1 - 8)
 -- E2: Adjust Attack (ms) OR Gain
 -- E3: Adjust Decay (s)
+```
 
 Converting continuous amplitude levels to MIDI note velocities requires an onset detection / re-triggering logic. Unlike CCs (which update continuously as a stream of values), MIDI notes require explicit note_on events (with velocity 1–127) when a band strikes, followed by a note_off when the band drops back below a threshold or finishes its envelope.
