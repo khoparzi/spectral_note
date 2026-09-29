@@ -1,4 +1,4 @@
--- spectral_note.lua
+-- spectral_note
 -- 8-band dynamics visualizer & MIDI Note velocity sender
 --
 -- PAGE 1: Master Stereo In/Out Level Monitor
